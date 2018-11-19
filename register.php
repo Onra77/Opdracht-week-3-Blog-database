@@ -1,4 +1,4 @@
-<?php
+<php
 require_once('connect.php')
 if(isset($_POST) & !empty($_POST)){
     $username = mysql_real_escape_string($connection, $_POST['username']);
@@ -14,8 +14,9 @@ if(isset($_POST) & !empty($_POST)){
      }
      
      }
+}     
 
-?>
+>
 
     
 <!DOCTYPE html> 
@@ -23,12 +24,12 @@ if(isset($_POST) & !empty($_POST)){
 <head>
         <title>Registreren</title>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 
        <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css"
 </head>    
 <body>
     <div class="container">
