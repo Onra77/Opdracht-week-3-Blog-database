@@ -16,7 +16,7 @@ w3-005
 Ik kan het nog niet laten sorteren op datum of gebruiker.
 
 w3-006
-Ik kan nog geen gebruikers registeren.
+Gebruikers kunnen zich registeren.
 
 w3-007
 

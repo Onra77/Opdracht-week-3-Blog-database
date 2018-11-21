@@ -12,7 +12,7 @@ if(isset($_POST) & !empty($_POST)){
     $password = $_POST['password'];
     //$password = md5($_POST['password']);
      
-     $sql = "INSERT INTO 'login' (username, email, password) VALUES ('$username', '$email', '$password')";
+     $sql = "INSERT INTO login (username, email, password) VALUES ('$username', '$email', '$password')";
      $result = mysqli_query($db, $sql);
      if($result){
         $smsg = "Gebruiker succesvol geregisteerd.";
