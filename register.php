@@ -3,11 +3,11 @@ include_once("db.php");
 if(isset($_POST) & !empty($_POST)){
 //if(isset($_POST['submit']))  { 
 
-    $username = $_POST['username'];
-    //$username = mysqli_real_escape_string($connection, $_POST['username']);
+    //$username = $_POST['username'];
+    $username = mysqli_real_escape_string($db, $_POST['username']);
 
-    $email = $_POST['email'];
-    //$email = mysqli_real_escape_string($connection, $_POST['email']);
+    //$email = $_POST['email'];
+    $email = mysqli_real_escape_string($db, $_POST['email']);
 
     $password = $_POST['password'];
     //$password = md5($_POST['password']);
@@ -30,7 +30,7 @@ if(isset($_POST) & !empty($_POST)){
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js" ></script>
     
         <link rel="stylesheet" type="text/css" href="styles.css">
 </head>    

@@ -1,30 +1,26 @@
 Goedendag,
 
 w3-001
-Men kan berichten plaatsen en als er geen berichten zijn dan wordt dit vermeld. Er is een knop om een nieuwe bericht te maken.
-Bij het niet volledige invullen van een blog krijg je een foutmelding maar de ingevoerde tekst blijft staan. Standaard wordt dan alle tekst verwijderd.
+Ik kan berichten plaatsen in mijn database.
 
 w3-002
-De meeste recente blog wordt bovenaan geplaatst, wijzigen van je blog/bericht brengt geen wijziging in de datum. De bericht blijft zijn oorspronkelijk datum en tijdstip aanhouden.
+Deze zijn zichtbaar voor iedereen ingelogd of niet, alleen als niet ingelogd kun je niet wijzigen of verwijderen.
 
 w3-003
-De berichten kunnen verwijderd worden.
+Alleen als je ingelogd bent kun je berichten verwijderen.
 
 w3-004
-De berichten kunnen gewijzigd worden.
+Alleen als je ingelogd bent kun je berichten wijzigen.
 
 w3-005
-De volgorde aanpassen moet nog worden ingevoerd.
+Ik kan het nog niet laten sorteren op datum of gebruiker.
 
 w3-006
-Gebruikers opslaan met behulp van login moet nog gemaakt worden.
+Ik kan nog geen gebruikers registeren.
 
 w3-007
-Login werkt nog niet :(
 
 w3-008
-Login werkt nog niet :(
-Registratie werkt ook nog niet :(
 
 w3-009
 
