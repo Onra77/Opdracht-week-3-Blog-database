@@ -1,12 +1,19 @@
 <?php
 include_once("db.php");
 if(isset($_POST) & !empty($_POST)){
-    $username = mysqli_real_escape_string($connection, $_POST['username']);
-    $email = mysqli_real_escape_string($connection, $_POST['email']);
-    $password = md5($_POST['password']);
+//if(isset($_POST['submit']))  { 
+
+    $username = $_POST['username'];
+    //$username = mysqli_real_escape_string($connection, $_POST['username']);
+
+    $email = $_POST['email'];
+    //$email = mysqli_real_escape_string($connection, $_POST['email']);
+
+    $password = $_POST['password'];
+    //$password = md5($_POST['password']);
      
      $sql = "INSERT INTO 'login' (username, email, password) VALUES ('$username', '$email', '$password')";
-     $result = mysqli_query($connection, $sql);
+     $result = mysqli_query($db, $sql);
      if($result){
         $smsg = "Gebruiker succesvol geregisteerd.";
      }else{
@@ -40,7 +47,8 @@ if(isset($_POST) & !empty($_POST)){
         <label for="inputPassword" class="sr-only">Wachtwoord</label>
         <input type="password" name="password" id="inputPasword" class="form-control" placeholder="Wachtwoord vereist">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Registeer</button>
-        <a class="btn btn-lg btn-primary btn-block" href="index.php">Login</a>
+        <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
+        <a class="btn btn-lg btn-primary btn-block" href="index.php">Home</a>
     </form>
     </div>
 </body>

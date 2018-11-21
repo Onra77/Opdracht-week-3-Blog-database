@@ -7,21 +7,15 @@ if(isset($_SESSION['username'])) {
 //true al ingelogd
 header("location:index.php");
 
-}else{
+} else{
 
-            if(isset($_POST['submit']))  {
-
-            //$username = mysqli_real_escape_string($db, ($_POST['username']));
-
-            $username = $_POST['username'];
-            //$password = md5($_POST['password']);
-
+            if(isset($_POST['submit']))  { 
+            //$username = $_POST['username'];
+            $username = mysqli_real_escape_string($db, ($_POST['username']));
             $password = $_POST['password'];
-            
-            $sql = "SELECT * FROM login WHERE username='$username' AND password='$password'";
-
+            //$password = md5($_POST['password']);
+            $sql = "SELECT * FROM login WHERE username ='$username' AND password ='$password'";
             $result = mysqli_query($db, $sql);
-            
             echo $count = mysqli_num_rows($result);
             if($count == 1){
                 
@@ -29,25 +23,11 @@ header("location:index.php");
                 header("location:index.php");
 
                 }else{
-                    
                     $fmsg = "Ongeldig gebruiker/wachtwoord";
                 }
-
-       
-           /* 
-            if(!$result) {
-                // toon foutmelding
-                printf("Error: %s\n", mysqli_error($db));
-                exit();
             }
-            */
-             
-            }
-
-
-}
+    }
 ?>
-
     
 <!DOCTYPE html> 
 <html>
@@ -64,7 +44,7 @@ header("location:index.php");
 <body>
     <div class="container">
         <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"><?php echo $smsg; ?></div>} <?php } ?>
-        <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"><?php echo $fmsg; ?></div>} <?php } ?>
+        <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"><?php echo $fmsg; ?></div> <?php } ?>
         <form class="form-signing" method="POST">
         <h2 class="form-signin-heading">Login</h2>
         <div class="input-group">
@@ -76,6 +56,7 @@ header("location:index.php");
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Wachtwoord vereist!">
         <input type="submit" class="btn btn-lg btn-primary btn-block" name="submit" value="Login">
         <a class="btn btn-lg btn-primary btn-block" href="register.php">Registeer</a>
+        <a class="btn btn-lg btn-primary btn-block" href="index.php">Home</a>
     </form>
     </div>
 </body>
