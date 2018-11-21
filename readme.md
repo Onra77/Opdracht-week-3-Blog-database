@@ -1,31 +1,34 @@
 Goedendag,
 
-w2-001
+w3-001
 Men kan berichten plaatsen en als er geen berichten zijn dan wordt dit vermeld. Er is een knop om een nieuwe bericht te maken.
-Bij het niet volledige invullen van een blog krijg je een foutmelding maar de ingevoerde tekst blijft staan.
-Standaard wordt alle tekst worden verwijderd.
+Bij het niet volledige invullen van een blog krijg je een foutmelding maar de ingevoerde tekst blijft staan. Standaard wordt dan alle tekst verwijderd.
 
-w2-002
-De meeste recente blog wordt bovenaan geplaatst, wijzigen van je blog/bericht brengt geen wijziging in de datum.
-Het blijft dus op dezelfde plaats staan.
+w3-002
+De meeste recente blog wordt bovenaan geplaatst, wijzigen van je blog/bericht brengt geen wijziging in de datum. De bericht blijft zijn oorspronkelijk datum en tijdstip aanhouden.
 
-w2-003
-Met nbbc.php wordt HTML code uit de tekst uitgefilterd.
+w3-003
+De berichten kunnen verwijderd worden.
 
-w2-004
-Zeer eenvoudig captcha code 1+1=
+w3-004
+De berichten kunnen gewijzigd worden.
 
-w2-005
-Edit van een blog/bericht. Met reset functie wordt de orgineel bericht terug gezet.
+w3-005
+De volgorde aanpassen moet nog worden ingevoerd.
 
-w2-006
-verwijderen van een blog/bericht.
+w3-006
+Gebruikers opslaan met behulp van login moet nog gemaakt worden.
 
-w2-007
-Reseten naar ogineel blog/bericht of lege veld.
+w3-007
+Login werkt nog niet :(
 
-w2-008
-Login en registratie werkt nog niet :(
+w3-008
+Login werkt nog niet :(
+Registratie werkt ook nog niet :(
+
+w3-009
+
+w3-010
 
 mvg
 Arno

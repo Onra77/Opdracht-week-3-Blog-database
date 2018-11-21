@@ -43,7 +43,7 @@
         <input name="reset" type="reset" value="Reset">
         <input type="button" value="Terug" onclick="location.href='index.php';">   
            <p>1+1=</p>
-        <input placeholder="Wat is 1=1" type="text" name="captcha">  
+        <input placeholder="Wat is 1+1" type="text" name="captcha">  
      </form>
         
     </body>    
