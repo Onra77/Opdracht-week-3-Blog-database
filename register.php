@@ -16,6 +16,7 @@ if(isset($_POST) & !empty($_POST)){
      $result = mysqli_query($db, $sql);
      if($result){
         $smsg = "Gebruiker succesvol geregisteerd.";
+        header("location:login.php");
      }else{
         $fsmg = "Registratie mislukt.";
      }

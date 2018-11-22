@@ -1,0 +1,2 @@
+$author = strip_tags($_POST['username']);
+$author = mysqli_real_escape_string($db, $author);

@@ -50,16 +50,18 @@
                         $id = $row['id'];
                         $title = $row['title'];
                         $content = $row['content'];
+                        $author = $row['author'];
                         $date = $row['date'];
+                        //$username = $row['username'];
                         $admin = "<div><a href='del_post.php?pid=$id'>Delete</a>&nbsp;<a href='edit_post.php?pid=$id'>Edit</a>&nbsp;<a href='post.php?pid=$id'>New</a></div>";
                         $output = $bbcode->Parse($content);
-                        $post .="<div><h2><a href='view_post/php?pid=$id'>$title</a></h2><h3>$date</h3><p>$output</p>$admin</div>";
+                        $post = "<div><h2><a href='view_post/php?pid=$id'>$title</a></h2><H2>$author</h2><h3>$date</h3><p>$output</p>$admin</div>";
                         echo $post;
-                        }
-                    } else {
+                    }
+            } else {
                         echo "er is geen resultaat";
                     }
-                } else if(mysqli_num_rows($res) >0) {
+            } else if(mysqli_num_rows($res) >0) {
                     while($row = mysqli_fetch_assoc($res)) {
                         $id = $row['id'];
                         $title = $row['title'];
@@ -67,7 +69,7 @@
                         $date = $row['date'];
                         $admin = 
                         $output = $bbcode->Parse($content);
-                        $post .="<div><h2><a href='view_post/php?pid=$id'>$title</a></h2><h3>$date</h3><p>$output</p>$admin</div>";
+                        $post ="<div><h2><a href='view_post/php?pid=$id'>$title</a></h2><h3>$date</h3><p>$output</p>$admin</div>";
                         echo $post;
                     } 
                 }
