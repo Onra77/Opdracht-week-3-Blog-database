@@ -54,7 +54,7 @@
                         $date = $row['date'];
                         $admin = 
                         $output = $bbcode->Parse($content);
-                        $post ="<div><h2><a href='view_post/php?pid=$id'>$title</a></h2><h3>$date</h3><p>$output</p>$admin</div>";
+                        $post = "<div><h2><a href='view_post/php?pid=$id'>$title</a></h2><h3>$date</h3><p>$output</div>";
                         echo $post;
                     } 
                 }
