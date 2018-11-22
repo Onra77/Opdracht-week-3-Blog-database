@@ -59,9 +59,9 @@
                         echo $post;
                     }
             } else {
-                        echo "er is geen resultaat";
+                        echo "er zijn geen b";
                     }
-            } else if(mysqli_num_rows($res) >0) {
+                } else if(mysqli_num_rows($res) >0) {
                     while($row = mysqli_fetch_assoc($res)) {
                         $id = $row['id'];
                         $title = $row['title'];

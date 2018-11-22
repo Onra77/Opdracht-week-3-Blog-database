@@ -8,6 +8,23 @@
         header("location: login.php");
         return;
     } */
+    $pid = $_GET['pid'];
+
+    $sql =  "SELECT * FROM post WHERE id='$pid'";
+    $q =mysqli_query($db, $sql);
+    while($r = mysqli_fetch_assoc($q)){
+
+       if($r['author'] != isset($_SESSION['username'])) {
+
+        header("location:index.php");
+        //opzoutn
+       }else{
+
+
+       }
+
+    }
+
 
 
     if(!isset($_GET['pid'])) {
