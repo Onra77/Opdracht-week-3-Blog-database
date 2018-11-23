@@ -2,12 +2,14 @@
     include_once("db.php");
     session_start();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Blog</title>
 </head>
+
 <body>
     <div id=makeup>
         <?php if(isset($_SESSION['username'])) { ?>

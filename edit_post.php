@@ -20,12 +20,14 @@
         header("Location: index.php");
     }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="post_style.css">
     <title>Blog - Post</title>
 </head>
+
 <body>
     <?php
     $sql_get ="SELECT * FROM post WHERE id=$pid LIMIT 1";

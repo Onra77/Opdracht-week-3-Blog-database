@@ -1,7 +1,6 @@
 <?php
     session_start();
     include_once("db.php");
-
 // zodat de value (om de waarde te behouden na foutmelding) in form niet als tekst wordt geprint.
     $title = '';
     $content = '';
@@ -24,6 +23,7 @@
         }
       }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

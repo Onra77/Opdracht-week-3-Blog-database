@@ -16,15 +16,19 @@ w3-005
 Ik kan het nog niet laten sorteren op datum of gebruiker.
 
 w3-006
-Gebruikers kunnen zich registeren.
+Tabel beschikbaar in phpMyAdmin.
 
 w3-007
+Je kan als gebruiker inloggen en onder die naam meerder berichten plaatsen.
 
 w3-008
+Je kan je registeren.
 
 w3-009
+geen beheerder aanwezig, Lord of the Flies.
 
 w3-010
+Geen zoekfunctie aanwezig.
 
 mvg
 Arno

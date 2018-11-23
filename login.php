@@ -25,26 +25,27 @@ header("location:index.php");
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>    
+<head>
+    <title>Login</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>    
+
 <body>
     <div class="container">
         <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"><?php echo $smsg; ?></div>} <?php } ?>
         <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"><?php echo $fmsg; ?></div> <?php } ?>
-            <form class="form-signing" method="POST">
-                <h2 class="form-signin-heading">Login</h2>
-                <input type="text" name="username" class="form-control" placeholder="Gebruikersnaam" required>
-                <label for="inputPassword" class="sr-only">Wachtwoord</label>
-                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Wachtwoord vereist!">
-                <input type="submit" class="btn btn-lg btn-primary btn-block" name="submit" value="Login">
-                <a class="btn btn-lg btn-primary btn-block" href="register.php">Registeer</a>
-                <a class="btn btn-lg btn-primary btn-block" href="index.php">Home</a>
+         <form class="form-signing" method="POST">
+             <h2 class="form-signin-heading">Login</h2>
+             <input type="text" name="username" class="form-control" placeholder="Gebruikersnaam" required>
+             <label for="inputPassword" class="sr-only">Wachtwoord</label>
+             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Wachtwoord vereist!">
+             <input type="submit" class="btn btn-lg btn-primary btn-block" name="submit" value="Login">
+             <a class="btn btn-lg btn-primary btn-block" href="register.php">Registeer</a>
+             <a class="btn btn-lg btn-primary btn-block" href="index.php">Home</a>
             </form>
     </div>
 </body>

@@ -16,6 +16,7 @@ if(isset($_POST) & !empty($_POST)){
      }
    }
 ?>
+
 <!DOCTYPE html> 
 <html>
 <head>
@@ -25,7 +26,8 @@ if(isset($_POST) & !empty($_POST)){
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://code.jquery.com/jquery-latest.min.js" ></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
-</head>    
+</head>
+
 <body>
     <div class="container">
         <form class="form-signing" method="POST">
