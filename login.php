@@ -43,7 +43,7 @@ header("location:index.php");
              <input type="text" name="username" class="form-control" placeholder="Gebruikersnaam" required>
              <label for="inputPassword" class="sr-only">Wachtwoord</label>
              <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Wachtwoord vereist!">
-             <input type="submit" class="btn btn-lg btn-primary btn-block" name="submit" value="Login">
+             <input type="submit" class="btn btn-lg btn-primary btn-block" name="submit" value="Login"><br>
              <a class="btn btn-lg btn-primary btn-block" href="register.php">Registeer</a>
              <a class="btn btn-lg btn-primary btn-block" href="index.php">Home</a>
             </form>

@@ -37,7 +37,7 @@ if(isset($_POST) & !empty($_POST)){
             <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
             <label for="inputPassword" class="sr-only">Wachtwoord</label>
             <input type="password" name="password" id="inputPasword" class="form-control" placeholder="Wachtwoord vereist">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Registreer</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Registreer</button><br>
             <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
             <a class="btn btn-lg btn-primary btn-block" href="index.php">Home</a>
         </form>
